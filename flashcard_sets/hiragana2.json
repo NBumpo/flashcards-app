@@ -1,0 +1,75 @@
+[
+    {"front": "が", "back": "ga", "known": false},
+    {"front": "ぎ", "back": "gi", "known": false},
+    {"front": "ぐ", "back": "gu", "known": false},
+    {"front": "げ", "back": "ge", "known": false},
+    {"front": "ご", "back": "go", "known": false},
+  
+    {"front": "ざ", "back": "za", "known": false},
+    {"front": "じ", "back": "ji", "known": false},
+    {"front": "ず", "back": "zu", "known": false},
+    {"front": "ぜ", "back": "ze", "known": false},
+    {"front": "ぞ", "back": "zo", "known": false},
+  
+    {"front": "だ", "back": "da", "known": false},
+    {"front": "ぢ", "back": "ji (di)", "known": false},
+    {"front": "づ", "back": "zu (du)", "known": false},
+    {"front": "で", "back": "de", "known": false},
+    {"front": "ど", "back": "do", "known": false},
+  
+    {"front": "ば", "back": "ba", "known": false},
+    {"front": "び", "back": "bi", "known": false},
+    {"front": "ぶ", "back": "bu", "known": false},
+    {"front": "べ", "back": "be", "known": false},
+    {"front": "ぼ", "back": "bo", "known": false},
+  
+    {"front": "ぱ", "back": "pa", "known": false},
+    {"front": "ぴ", "back": "pi", "known": false},
+    {"front": "ぷ", "back": "pu", "known": false},
+    {"front": "ぺ", "back": "pe", "known": false},
+    {"front": "ぽ", "back": "po", "known": false},
+  
+    {"front": "きゃ", "back": "kya", "known": false},
+    {"front": "きゅ", "back": "kyu", "known": false},
+    {"front": "きょ", "back": "kyo", "known": false},
+  
+    {"front": "しゃ", "back": "sha", "known": false},
+    {"front": "しゅ", "back": "shu", "known": false},
+    {"front": "しょ", "back": "sho", "known": false},
+  
+    {"front": "ちゃ", "back": "cha", "known": false},
+    {"front": "ちゅ", "back": "chu", "known": false},
+    {"front": "ちょ", "back": "cho", "known": false},
+  
+    {"front": "にゃ", "back": "nya", "known": false},
+    {"front": "にゅ", "back": "nyu", "known": false},
+    {"front": "にょ", "back": "nyo", "known": false},
+  
+    {"front": "ひゃ", "back": "hya", "known": false},
+    {"front": "ひゅ", "back": "hyu", "known": false},
+    {"front": "ひょ", "back": "hyo", "known": false},
+  
+    {"front": "みゃ", "back": "mya", "known": false},
+    {"front": "みゅ", "back": "myu", "known": false},
+    {"front": "みょ", "back": "myo", "known": false},
+  
+    {"front": "りゃ", "back": "rya", "known": false},
+    {"front": "りゅ", "back": "ryu", "known": false},
+    {"front": "りょ", "back": "ryo", "known": false},
+  
+    {"front": "ぎゃ", "back": "gya", "known": false},
+    {"front": "ぎゅ", "back": "gyu", "known": false},
+    {"front": "ぎょ", "back": "gyo", "known": false},
+  
+    {"front": "じゃ", "back": "ja", "known": false},
+    {"front": "じゅ", "back": "ju", "known": false},
+    {"front": "じょ", "back": "jo", "known": false},
+  
+    {"front": "びゃ", "back": "bya", "known": false},
+    {"front": "びゅ", "back": "byu", "known": false},
+    {"front": "びょ", "back": "byo", "known": false},
+  
+    {"front": "ぴゃ", "back": "pya", "known": false},
+    {"front": "ぴゅ", "back": "pyu", "known": false},
+    {"front": "ぴょ", "back": "pyo", "known": false}
+  ]

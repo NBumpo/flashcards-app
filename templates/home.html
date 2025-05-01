@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Flashcard Sets</title>
+</head>
+<body>
+    <nav>
+    <span class="titlefurigana">と ら ふ だ </span>
+    <h1 class="toratitle">寅札 tigercards</h1>
+    </nav>
+    <h2>Select a Flashcard Set</h2>
+    <ul>
+        {% for set in sets %}
+        <li class="setlinkli"><a class="setlink" href="{{ url_for('view_set', set_name=set) }}">{{ set|capitalize }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

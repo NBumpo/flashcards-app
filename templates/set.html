@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{{ set_name|capitalize }} Flashcards</title>
+</head>
+<body>
+    <nav>
+    <a href="/" class="backlink">Back</a>
+    <h1>{{ set_name|capitalize }} Flashcards</h1>
+    <div id="score-display">Score: 0</div>
+    
+    </nav>
+    <ul class="cards">
+        {% for card in cards %}
+        <li >
+            <div class="card">
+            {{ card.front }}<br>
+            
+            <input type="text" id="input-{{ loop.index }}" placeholder="Type your answer..." data-answer="{{ card.back|escape }}">
+            
+            <button class="checkbutton" id="checkbutton-{{ loop.index }}" onclick="checkAnswer('{{ loop.index }}', '{{ card.back }}')">Check</button>
+            <div class="feedback" id="feedback-{{ loop.index }}"></div>
+            <!-- <strong>A:</strong> {{ card.back }} -->
+        </div>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <script>
+        let score = 0;
+        function checkAnswer(index, correctAnswer) {
+            const input = document.getElementById('input-' + index).value.trim();
+            const feedback = document.getElementById('feedback-' + index);
+            const checkbutton = document.getElementById('checkbutton-' + index);
+            if (input === correctAnswer) {
+                
+                feedback.textContent = 'Correct!';
+                // feedback.className = 'feedback correct';
+                $('.card').eq(index - 1).addClass('correct')
+                // card.classList.add('correct');
+                score += 1
+                updateScore();
+                checkbutton.remove()
+
+
+            } else {
+                feedback.textContent = 'Incorrect. Correct answer: ' + correctAnswer;
+                feedback.className = 'feedback incorrect';
+                $('.card').eq(index - 1).addClass('incorrect')
+                checkbutton.remove()
+            }
+        }
+        function updateScore() {
+    document.getElementById('score-display').textContent = `Score: ${score}`;
+}
+
+//         window.onload = function() {
+//     if (window.jQuery) {  
+//         // jQuery is loaded  
+//         alert("Yeah!");
+//     } else {
+//         // jQuery is not loaded
+//         alert("Doesn't Work");
+//     }
+// }
+    </script>
+</body>
+</html>
