@@ -7,15 +7,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <nav>
-        <span class="titlefurigana">と ら ふ だ </span>
-        <h1 class="toratitle">寅札 tigercards</h1>
-        </nav>
-        <h2>Select a Flashcard Set</h2>
-        <ul>
-            {% for set in sets %}
-            <li class="setlinkli"><a class="setlink" href="{{ url_for('view_set', set_name=set) }}">{{ set|capitalize }}</a></li>
-            {% endfor %}
-        </ul>
+    <div>
+        {% include "templates/home.html" %}    
+        </div>
 </body>
 </html>
